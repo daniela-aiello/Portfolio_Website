@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <nav class="navbar">
+    <ul class="nav-links">
+        <li><a href="index.html">Start</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="ueber-mich.html">Über mich</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+</nav>
+
+
+<section class="tiles-section">
+    <div class="tiles-container">
+        
+        <!-- Kachel 1 -->
+        <div class="tile">
+            <!-- Passe den Pfad zu deinem Bild an -->
+            <img src="assets/bodyLino.png" alt="linoprint">
+            <div class="tile-content">
+                <h3>Körperformen</h3>
+<p>Experimentelle Linienführung und organische Formen im Linolschnitt-Verfahren.</p>
+            </div>
+        </div>
+
+        <!-- Kachel 2 -->
+        <div class="tile">
+            <img src="assets/kaffeLinol.jpeg" alt="linoprint">
+            <div class="tile-content">
+               <h3>Make Coffee Not War</h3>
+<p>Eine Hommage an das schwarze Gold. Analoger Linolschnitt mit starkem Schwarz-Weiß-Kontrast.</p>
+            </div>
+        </div>
+
+        <!-- Kachel 3 -->
+        <div class="tile">
+            <img src="assets/SCENE1.png" alt="Illustrationen">
+            <div class="tile-content">
+                <h3>..</h3>
+                <p>...</p>
+            </div>
+        </div>
+
+    <!-- Kachel 4 -->
+    <div class="tile">
+        <img src="assets/Scene_3.png" alt="Projekt 4">
+        <div class="tile-content"><h3>Titel 4</h3><p>Beschreibung</p></div>
+    </div>
+        <div class="tile">
+            <img src="assets/Szene_g.png" alt="Projekt 5">
+            <div class="tile-content"><h3>Titel 5</h3><p>Beschreibung</p></div>
+        </div>
+<p class="intro-text">
+    Von Skizzenbuch-Experimenten bis zum fertigen Print: Hier dreht sich alles um Illustration. Ich liebe es, mit verschiedenen Stilen und Techniken zu spielen. Deshalb findest du hier sowohl ausdrucksstarke, handgemachte Linolschnitte als auch liebevoll ausgearbeitete, digitale Zeichnungen. Klick dich gerne durch meine Motive!
+</p>
+
+</section>
+
+
+
+
+
+
+
+
+<!-- WICHTIG: Das Pop-up muss auch auf dieser Seite existieren -->
+<div id="imageModal" class="modal">
+    <span class="close-btn" id="closeImageBtn">&times;</span>
+    <div class="modal-content-wrapper">
+        <img id="lightbox-img" src="" alt="Großansicht">
+    </div>
+</div>
+
+<!-- EXTRA-BOX: ANIMATIONEN -->
+    <section class="animation-section" style="background-color: #f0f4f8; padding: 60px 20px; margin: 60px auto 40px auto; max-width: 1200px; border-radius: 20px;">
+        
+        <div class="intro-container" style="text-align: center; margin-bottom: 40px;">
+            <h2 style="font-family: 'Lato', sans-serif; font-size: 2em; margin-bottom: 15px;">Animationen & Bewegtbild</h2>
+            <p class="intro-text">
+                Illustrationen müssen nicht immer stillstehen. Wenn ich nicht gerade mit Stift oder Linolmesser arbeite, erwecke ich meine Grafiken und Charaktere auch gerne digital zum Leben. Hier sind ein paar meiner Motion-Design-Projekte und kleinen Animationen.
+            </p>
+        </div>
+
+        <!-- KACHEL-RASTER FÜR ANIMATIONEN -->
+        <div class="tiles-container">
+            
+            <!-- Animation 1 (Beispiel mit GIF) -->
+            <div class="tile">
+                <img src="assets/8BD61C4D-6BF9-42EE-ACC5-EBE2CB80C552.gif" alt="GIF Animation">
+                <div class="tile-content">
+                    <h3>Charakter-Animation</h3>
+                    <p>Ein kurzer Walk-Cycle. Aus einer einfachen digitalen Zeichnung wird ein lebendiger Charakter.</p>
+                </div>
+            </div>
+
+            <!-- Animation 2 (Beispiel mit echtem Video/MP4) -->
+            <div class="tile">
+                <!-- HTML5 Video-Tag: Läuft automatisch (autoplay), ohne Ton (muted) und in Dauerschleife (loop) -->
+                <video width="100%" autoplay loop muted playsinline style="border-radius: 8px 8px 0 0;">
+                    <source src="assets/FILM.MP4" type="video/mp4">
+                    Dein Browser unterstützt das Video-Tag nicht.
+                </video>
+                <div class="tile-content">
+                    <h3>Motion Design</h3>
+                    <p>Ein kleines grafisches Animations-Projekt, das Typografie und Formen in Bewegung bringt.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+<footer class="site-footer">
+    <div class="footer-content">
+        <p>&copy; 2026 Daniela Aiello. Alle Rechte vorbehalten.</p>
+        
+        <ul class="footer-links">
+            <!-- Platzhalter für die Arte Aiello Social-Media-Kanäle oder ähnliches -->
+            <li><a href="https://instagram.com/dein-profil" target="_blank">Instagram</a></li>
+            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="datenschutz.html">Datenschutz</a></li>
+        </ul>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

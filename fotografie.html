@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotografie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html">Start</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="ueber-mich.html">Über mich</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+<!-- Sektion für die Fotokacheln -->
+<section class="tiles-section">
+    <div class="tiles-container">
+        
+        <!-- Kachel 1 -->
+        <div class="tile">
+            <!-- Passe den Pfad zu deinem Bild an -->
+            <img src="assets/louvre.jpg" alt="Paris">
+            <div class="tile-content">
+                <h3>Licht & Geometrie</h3>
+<p>Das Zusammenspiel von Glas, Stahl und historischen Fassaden am Louvre.</p>
+            </div>
+        </div>
+
+        <!-- Kachel 2 -->
+        <div class="tile">
+            <img src="assets/dior.JPG" alt="Paris">
+            <div class="tile-content">
+               <h3>Haute Couture</h3>
+<p>Faszination für Texturen und Layouts: Eindrücke der Dior-Ausstellung im Louvre.</p>
+            </div>
+        </div>
+
+<!-- Kachel 3 -->
+        <div class="tile">
+            <img src="assets/eifelturmsw.jpeg" alt="Paris">
+            <div class="tile-content">
+               <h3>Pariser Wahrzeichen</h3>
+               <p>Einzigartige Perspektiven und das besondere Licht der französischen Hauptstadt, eingefangen am Eiffelturm.</p>
+            </div>
+        </div>
+
+        <!-- Kachel 4 -->
+        <div class="tile">
+            <img src="assets/barbesMonet.jpeg" alt="Projekt 4">
+            <div class="tile-content">
+                <h3>Sternennacht in Paris</h3>
+                <p>Digitale Fotomontage: Meine urbane Aufnahme der Brasserie Barbès verschmilzt nahtlos mit den fließenden Pinselstrichen von Van Gogh.</p>
+            </div>
+        </div> <!-- HIER fehlte das schließende Tag für die Kachel -->
+    
+        <!-- Kachel 5 -->
+        <div class="tile">
+            <img src="assets/Bildschirmfoto 2025-10-07 um 23.13.00.jpeg" alt="Projekt 5">
+            <div class="tile-content">
+                <h3>Sizilien trifft Monet</h3>
+                <p>Ein fotografisches Spiel mit der Kunstgeschichte: Eigene Reiseerinnerungen aus Sizilien, atmosphärisch vereint mit Monets Meisterwerk.</p>
+            </div>
+        </div> <!-- HIER fehlte das schließende Tag für die Kachel -->
+
+        <!-- Kachel 6 -->
+        <div class="tile">
+            <img src="assets/dein-foto-6.jpg" alt="Projekt 6">
+            <div class="tile-content">
+                <h3>Titel 6</h3>
+                <p>Beschreibung</p>
+            </div>
+        </div>
+
+</section>
+
+<!-- VIDEO POP-UP (MODAL) -->
+<!-- Die id="videoModal" brauchen wir gleich für JavaScript -->
+<div id="videoModal" class="modal">
+    
+    <!-- Das Schließen-Kreuz (das &times; erzeugt ein schönes "X") -->
+    <span class="close-btn" id="closeBtn">&times;</span>
+    
+    <!-- Hier wird der Inhalt zentriert -->
+    <div class="modal-content-wrapper">
+        <video id="portfolio-video" controls>
+            <source src="assets/witheyeswideopen.mp4" type="video/mp4">
+            Dein Browser unterstützt das Video-Tag leider nicht.
+        </video>
+    </div>
+</div>
+<!-- Separater Video-Button -->
+<div class="video-button-container">
+    <!-- Wichtig: Die id="video-trigger" verknüpft den Button mit dem JavaScript -->
+    <button id="video-trigger" class="play-video-btn">▶ Dia Show</button>
+</div>
+<!-- BILD-POP-UP (LIGHTBOX) -->
+<div id="imageModal" class="modal">
+    <span class="close-btn" id="closeImageBtn">&times;</span>
+    <div class="modal-content-wrapper">
+        <!-- Hier landet das angeklickte Bild -->
+        <img id="lightbox-img" src="" alt="Großansicht">
+    </div>
+</div>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Daniela Aiello. Alle Rechte vorbehalten.</p>
+
+            <ul class="footer-links">
+                <li><a href="https://instagram.com/dein-profil" target="_blank">Instagram</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+                <li><a href="datenschutz.html">Datenschutz</a></li>
+            </ul>
+        </div>
+
+
+        
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
